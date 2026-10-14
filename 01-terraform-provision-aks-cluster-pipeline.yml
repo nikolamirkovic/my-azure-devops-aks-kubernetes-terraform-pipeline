@@ -68,8 +68,8 @@ stages:
         runOnce:
           deploy:
             steps: 
-            - download: current
-              artifact: terraform-manifests-out
+            #- download: current
+            #  artifact: terraform-manifests-out
             - task: TerraformInstaller@1
               displayName: Terraform Install
               inputs:
